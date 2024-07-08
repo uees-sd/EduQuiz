@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #46178F;" 
+      xmlns:fx="http://javafx.com/fxml" fx:controller="nodos_sd.controlador.PlayerController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Unirse a la sala" style="-fx-text-fill: white;">
+        <font>
+            <Font name="Montserrat Bold" size="24.0"/>
+        </font>
+    </Label>
+
+    <TextField fx:id="pinTextField" promptText="Ingrese el PIN de la sala" 
+               style="-fx-font-size: 18px; -fx-padding: 10 15 10 15; -fx-background-radius: 5;">
+        <font>
+            <Font name="Montserrat" size="18.0"/>
+        </font>
+    </TextField>
+
+    <Button text="Unirse" onAction="#joinRoom"
+            style="-fx-background-color: #FFA602; -fx-text-fill: white; -fx-font-size: 18px; -fx-padding: 10 20 10 20; -fx-background-radius: 5;">
+        <font>
+            <Font name="Montserrat" size="18.0"/>
+        </font>
+    </Button>
+</VBox>
